@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:composition="http://palladiosimulator.org/PalladioComponentModel/Core/Composition/5.2" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:system="http://palladiosimulator.org/PalladioComponentModel/System/5.2" id="_d3inIBlPEe2Bj5S-a-ZfPg" entityName="Software Architecture System">
+  <assemblyContexts__ComposedStructure id="_d3PFIBlPEe2Bj5S-a-ZfPg" entityName="InvoiceApp">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="pcm.repository#_dArQkRlPEe2Bj5S-a-ZfPg"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_d3PFIRlPEe2Bj5S-a-ZfPg" entityName="ShippingApp">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="pcm.repository#_dAr3phlPEe2Bj5S-a-ZfPg"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_d3PFIhlPEe2Bj5S-a-ZfPg" entityName="OrderApp">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="pcm.repository#_dApbYBlPEe2Bj5S-a-ZfPg"/>
+  </assemblyContexts__ComposedStructure>
+  <eventChannel__ComposedStructure id="_d3SIcBlPEe2Bj5S-a-ZfPg" entityName="order" eventChannelSourceConnector__EventChannel="_d3cggBlPEe2Bj5S-a-ZfPg" eventChannelSinkConnector__EventChannel="_d3ZdMBlPEe2Bj5S-a-ZfPg _d3cggRlPEe2Bj5S-a-ZfPg">
+    <eventGroup__EventChannel href="pcm.repository#_dAVSUBlPEe2Bj5S-a-ZfPg"/>
+  </eventChannel__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:EventChannelSinkConnector" id="_d3ZdMBlPEe2Bj5S-a-ZfPg" entityName="dataSink_order through order" assemblyContext__EventChannelSinkConnector="_d3PFIBlPEe2Bj5S-a-ZfPg" eventChannel__EventChannelSinkConnector="_d3SIcBlPEe2Bj5S-a-ZfPg">
+    <sinkRole__EventChannelSinkConnector href="pcm.repository#_dAqpgBlPEe2Bj5S-a-ZfPg"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:EventChannelSourceConnector" id="_d3cggBlPEe2Bj5S-a-ZfPg" entityName="dataSource_fireOrderCreatedEvent_send( &quot;order&quot;,,order) at OrderService" assemblyContext__EventChannelSourceConnector="_d3PFIhlPEe2Bj5S-a-ZfPg" eventChannel__EventChannelSourceConnector="_d3SIcBlPEe2Bj5S-a-ZfPg">
+    <sourceRole__EventChannelSourceRole href="pcm.repository#_dAYVoBlPEe2Bj5S-a-ZfPg"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:EventChannelSinkConnector" id="_d3cggRlPEe2Bj5S-a-ZfPg" entityName="dataSink_order through order" assemblyContext__EventChannelSinkConnector="_d3PFIRlPEe2Bj5S-a-ZfPg" eventChannel__EventChannelSinkConnector="_d3SIcBlPEe2Bj5S-a-ZfPg">
+    <sinkRole__EventChannelSinkConnector href="pcm.repository#_dArQkhlPEe2Bj5S-a-ZfPg"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_d3gx8BlPEe2Bj5S-a-ZfPg" outerProvidedRole_ProvidedDelegationConnector="_d3dHkBlPEe2Bj5S-a-ZfPg" assemblyContext_ProvidedDelegationConnector="_d3PFIhlPEe2Bj5S-a-ZfPg">
+    <innerProvidedRole_ProvidedDelegationConnector href="pcm.repository#_dAm_IBlPEe2Bj5S-a-ZfPg"/>
+  </connectors__ComposedStructure>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_d3dHkBlPEe2Bj5S-a-ZfPg" entityName="provide_fireOrderCreatedEvent at OrderServiceOf_System">
+    <providedInterface__OperationProvidedRole href="pcm.repository#_dAlxABlPEe2Bj5S-a-ZfPg"/>
+  </providedRoles_InterfaceProvidingEntity>
+</system:System>

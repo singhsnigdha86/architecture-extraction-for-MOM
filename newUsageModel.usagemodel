@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<usagemodel:UsageModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:usagemodel="http://palladiosimulator.org/PalladioComponentModel/UsageModel/5.2">
+  <usageScenario_UsageModel id="_51sBIBlcEe2ZjdmO_M_RxA" entityName="UsageScenario">
+    <scenarioBehaviour_UsageScenario id="__b2_cBlcEe2ZjdmO_M_RxA" entityName="ScenarioBehaviour">
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Start" id="__b3mgBlcEe2ZjdmO_M_RxA" successor="_cXMtYBldEe2ZjdmO_M_RxA"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Stop" id="__b3mgRlcEe2ZjdmO_M_RxA" predecessor="_cXMtYBldEe2ZjdmO_M_RxA"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:EntryLevelSystemCall" id="_cXMtYBldEe2ZjdmO_M_RxA" entityName="EntryLevelSystemCall1" successor="__b3mgRlcEe2ZjdmO_M_RxA" predecessor="__b3mgBlcEe2ZjdmO_M_RxA">
+        <providedRole_EntryLevelSystemCall href="pcm.system#_d3dHkBlPEe2Bj5S-a-ZfPg"/>
+        <operationSignature__EntryLevelSystemCall href="pcm.repository#_dAZjwBlPEe2Bj5S-a-ZfPg"/>
+      </actions_ScenarioBehaviour>
+    </scenarioBehaviour_UsageScenario>
+    <workload_UsageScenario xsi:type="usagemodel:ClosedWorkload" population="3">
+      <thinkTime_ClosedWorkload specification="1.0"/>
+    </workload_UsageScenario>
+  </usageScenario_UsageModel>
+</usagemodel:UsageModel>

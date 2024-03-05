@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<allocation:Allocation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:allocation="http://palladiosimulator.org/PalladioComponentModel/Allocation/5.2" id="_yrUQsBlSEe2ZjdmO_M_RxA" entityName="New Allocation">
+  <targetResourceEnvironment_Allocation href="newResourceEnvironment.resourceenvironment#/"/>
+  <system_Allocation href="pcm.system#_d3inIBlPEe2Bj5S-a-ZfPg"/>
+  <allocationContexts_Allocation id="__yQ40BlSEe2ZjdmO_M_RxA" entityName="Allocation_InvoiceApp">
+    <resourceContainer_AllocationContext href="newResourceEnvironment.resourceenvironment#_ngE8wBlREe2ZjdmO_M_RxA"/>
+    <assemblyContext_AllocationContext href="pcm.system#_d3PFIBlPEe2Bj5S-a-ZfPg"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_DK0JABlTEe2ZjdmO_M_RxA" entityName="Allocation_ShippingApp">
+    <resourceContainer_AllocationContext href="newResourceEnvironment.resourceenvironment#_mKtFQBlREe2ZjdmO_M_RxA"/>
+    <assemblyContext_AllocationContext href="pcm.system#_d3PFIRlPEe2Bj5S-a-ZfPg"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_Lw2xwBlTEe2ZjdmO_M_RxA" entityName="Allocation_OrderApp">
+    <resourceContainer_AllocationContext href="newResourceEnvironment.resourceenvironment#_nPVLABlREe2ZjdmO_M_RxA"/>
+    <assemblyContext_AllocationContext href="pcm.system#_d3PFIhlPEe2Bj5S-a-ZfPg"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_OlkVEBlTEe2ZjdmO_M_RxA" entityName="Allocation_order">
+    <resourceContainer_AllocationContext href="newResourceEnvironment.resourceenvironment#_nPVLABlREe2ZjdmO_M_RxA"/>
+    <eventChannel__AllocationContext href="pcm.system#_d3SIcBlPEe2Bj5S-a-ZfPg"/>
+  </allocationContexts_Allocation>
+</allocation:Allocation>
